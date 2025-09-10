@@ -1,82 +1,13 @@
 <!DOCTYPE html>
 <html lang="th">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>MBA Panyapiwat e-Tracker</title>
-  <link rel="icon" href="https://ba.pim.ac.th/wp-content/uploads/2024/01/pim-favicon.png" type="image/x-icon">
-  <style>
-    html, body {
-      margin: 0;
-      padding: 0;
-      height: 100%;
-      font-family: "Prompt", sans-serif;
-      background: #f8fafc;
-    }
-
-    header {
-      background: #0b6fb8;
-      color: #fff;
-      padding: 12px 20px;
-      font-size: 1rem;
-      font-weight: bold;
-    }
-
-    .iframe-container {
-      position: relative;
-      width: 100%;
-      height: calc(100vh - 50px);
-    }
-
-    iframe {
-      width: 100%;
-      height: 100%;
-      border: none;
-      display: block;
-    }
-
-    .loader {
-      position: absolute;
-      inset: 0;
-      background: rgba(255,255,255,0.9);
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      z-index: 10;
-      font-size: 1.1rem;
-      color: #444;
-    }
-
-    .spinner {
-      width: 40px;
-      height: 40px;
-      border: 4px solid #ddd;
-      border-top: 4px solid #0b6fb8;
-      border-radius: 50%;
-      animation: spin 1s linear infinite;
-      margin-bottom: 12px;
-    }
-
-    @keyframes spin {
-      to { transform: rotate(360deg); }
-    }
-  </style>
+    <base target="_top">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>เว็บแอป</title>
 </head>
 <body>
-  <header>
-    MBA Panyapiwat · e-Tracker
-  </header>
-  <div class="iframe-container">
-    <div class="loader" id="loader">
-      <div class="spinner"></div>
-      <div>กำลังโหลดระบบ e-Tracker...</div>
-    </div>
-    <iframe 
-      src="https://script.google.com/macros/s/AKfycbxtDIBX6-w8JQUB4TyIi1aHIyHr0EQ6VRRpAfIQyls1j3XMkBrIHj_Eu4xtQ4xOUkaM/exec" 
-      title="MBA Panyapiwat e-Tracker"
-      onload="document.getElementById('loader').style.display='none';">
-    </iframe>
-  </div>
+    <iframe style="width: 100%; height: 100vh;" scrolling="yes" src="https://script.google.com/macros/s/AKfycbxtDIBX6-w8JQUB4TyIi1aHIyHr0EQ6VRRpAfIQyls1j3XMkBrIHj_Eu4xtQ4xOUkaM/exec" frameborder="0"></iframe>
 </body>
 </html>
